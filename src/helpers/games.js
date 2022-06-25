@@ -5,12 +5,12 @@ export const games_routes = [
   {
     path: "",
     component: SampleGame,
-    key:1,
+    key: 1,
   },
   {
 
-    path: "",
+    path: "secondGame",
     component: SampleGame2,
-    key:2,
+    key: 2,
   },
 ]

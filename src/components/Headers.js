@@ -5,6 +5,7 @@ const Headers = ({ routes }) => {
   const [state, setState] = useState({ prev: '', next: '' });
   const [counter, setCounter] = useState(1)
   const navigate = useNavigate()
+
   const click = (way) => {
     console.log(way);
     if (way === true) {

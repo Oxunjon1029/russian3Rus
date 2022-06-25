@@ -1,15 +1,13 @@
-import React from "react";
-
+import React from 'react';
+import '../styles/notFoundPage.css';
+import notFound from '../Images/notFound.jpg';
 const NotFound = () => {
   return (
-    <div
-      style={{
-        marginTop: "50px",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}>
-      <h1>Not found this page</h1>
+    <div className='not_found_container'>
+      <img src={notFound} alt='Error img' />
+      <a className='not_found_btn' href='/'>
+        Go to Home Page
+      </a>
     </div>
   );
 };
