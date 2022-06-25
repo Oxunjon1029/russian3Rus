@@ -1,6 +1,7 @@
 import Games from "../components/Games";
 import Home from "../components/Home";
 import Videos from "../components/Videos";
+import Audios from '../components/Audios'
 import { audios_routes } from "./audios";
 import { games_routes } from "./games";
 import { videos_routes } from "./videos";
@@ -14,7 +15,7 @@ export const routes = [
   {
     path: "/audio",
     key: "audio",
-    component: "",
+    component: Audios,
     children: audios_routes
   },
   {
