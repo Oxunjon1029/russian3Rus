@@ -1,0 +1,15 @@
+.seventh_video{
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.seventh{
+  height: 400px;
+}
+@media screen and (max-width:640px){
+  .seventh{
+    height: 200px;
+  }
+}

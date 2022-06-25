@@ -1,0 +1,9 @@
+.videos_container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 50px;
+}
+.videos_header_con {
+  width: 100%;
+}

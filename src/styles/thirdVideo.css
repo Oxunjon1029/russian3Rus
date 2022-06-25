@@ -1,0 +1,15 @@
+.third_video {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.third{
+  height: 500px;
+}
+@media screen and (max-width:640px){
+  .third{
+    height: 250px;
+  }
+}

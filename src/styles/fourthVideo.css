@@ -1,0 +1,15 @@
+.fourth_video {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fourth {
+  height: 400px;
+}
+@media screen and (max-width: 640px) {
+  .fourth {
+    height: 180px;
+  }
+}

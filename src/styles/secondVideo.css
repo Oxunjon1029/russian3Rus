@@ -1,0 +1,7 @@
+.second_video {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

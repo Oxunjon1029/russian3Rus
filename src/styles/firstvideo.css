@@ -1,0 +1,15 @@
+.first_video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: 30px auto;
+}
+.first{
+  height: 500px;
+}
+@media screen and (max-width:640px){
+  .first{
+    height: 400px;
+  }
+}

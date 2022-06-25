@@ -1,0 +1,15 @@
+.sixth_video {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sixth{
+  height: 500px;
+}
+@media screen and (max-width:640px){
+  .sixth{
+    height:400px;
+  }
+}

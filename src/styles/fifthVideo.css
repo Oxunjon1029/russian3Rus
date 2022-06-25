@@ -1,0 +1,15 @@
+.fifth_video {
+  width: 90%;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fifth{
+  height: 500px;
+}
+@media screen and (max-width:640px){
+  .fifth{
+    height:340px;
+  }
+}

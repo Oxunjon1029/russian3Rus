@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
-
+import {
+  BrowserRouter,
+  Route,
+  Routes,
+} from 'react-router-dom';
+import NotFound from './components/NotFound';
+import { routes } from './helpers/routes';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          {routes.map((item,i) => {
+            return (
+              <Route
+                exact
+                key={i}
+                path={item.path}
+                element={<item.component />}>
+                {item?.children?.map((child,i) => {
+                  return (
+                    <Route
+                      key={i}
+                      element={<child.component />}
+                      path={child.path}
+                    />
+                  );
+                })}
+              </Route>
+            );
+          })}
+          <Route path='*' element={<NotFound />} key='notfoundpage' />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
